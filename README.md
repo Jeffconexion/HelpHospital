@@ -26,10 +26,9 @@ enviar e-mail para o parente do paciente e imprimir relatório do paciente.
 
 ### MENU ###
 
-<p> 
 * Acolhimento - é utilizado pelo atendente, para cadastrar e manter o paciente.
 * Paciente - é utilizado pelo médico, para acessar o prontuário e imprimir relatórios
-</p> 
+
 
 
 <p align="center">
