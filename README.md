@@ -19,7 +19,7 @@
 ### Projeto ###
 
 <p> 
-Mediante o conhecimento adquirido, foi desenvolvido o HelpHospital empregado camadas e SOLID. Tevi como principal problema: 
+Mediante o conhecimento adquirido, foi desenvolvido o HelpHospital empregando camadas e SOLID. Tevi como principal problema: 
 enviar e-mail para o parente do paciente e imprimir relatório do paciente.
 </p> 
 
