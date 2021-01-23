@@ -12,6 +12,7 @@
 * Repositorios.
 * Views.
 * Autenticação.
+* Inversão de controle com Unity
 * Trabalhando com Entity Framework.
 * Publicação no Azure.
 
