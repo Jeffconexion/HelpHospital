@@ -1,0 +1,133 @@
+﻿@model HelpHospital.Domain.PacienteDomain
+
+
+@{
+    ViewBag.Title = "Prontuario";
+}
+@if (TempData["Mensagem"] != null)
+{
+    <div class="alert alert-danger">
+        <button type="button" class="close" data-dismiss="alert">x</button>
+        <h3><strong>@TempData["Mensagem"].ToString()</strong></h3>
+    </div>
+}
+
+@if (TempData["medicoPacienteAlterado"] != null)
+{
+    <div class="alert alert-success">
+        <button type="button" class="close" data-dismiss="alert">x</button>
+        <h3><strong>@TempData["medicoPacienteAlterado"].ToString()</strong></h3>
+    </div>
+}
+
+<h2 class="text-center">Prontuário</h2>
+<br />
+<hr />
+
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    if (Model == null)
+    {
+
+        <div class="row">
+            <div class="form-group col-md-4 col-md-offset-4">
+                <h3>Informe o RG</h3>
+                <div>
+                    @Html.EditorFor(model => model.Rg, new { htmlAttributes = new { @class = "form-control", placeholder = "O Rg do paciente é?" } })
+                    @Html.ValidationMessageFor(model => model.Rg, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+
+        <div class="row">
+            <div class="form-group">
+                <div class=" col-md-6 text-center">
+                    <input type="submit" value="Pesquisar" class="btn btn-success" />
+
+                </div>
+                <div class="col-md-6 text-center">
+                    @Html.ActionLink("Cancelar", "Index", "Home", null, new { @class = "btn - btn-danger" })
+
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <table class="table ">
+            <thead class="bg-info">
+                <tr>
+
+                    <th>
+                        @Html.DisplayNameFor(model => model.NomePaciente)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.SobreNomePaciente)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.DataNascimento)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Cidade)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Queixa)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.DataDeCadastro)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.DataDeSaida)
+                    </th>
+                    <th><strong>Ações</strong></th>
+                </tr>
+            </thead>
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => modelItem.NomePaciente)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => modelItem.SobreNomePaciente)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => modelItem.DataNascimento)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => modelItem.Cidade)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => modelItem.Queixa)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => modelItem.DataDeCadastro)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => modelItem.DataDeSaida)
+                </td>
+                <td>
+                    <a href="@Url.Action("Detalhes", "Medico", new { id = Model.IdPaciente })" class="btn btn-info " title="Detalhes"><span class="glyphicon glyphicon-list"></span></a>
+                    <a href="@Url.Action("Editar", "Medico", new { id = Model.IdPaciente })" class="btn btn-success" title="Editar"><span class="glyphicon glyphicon-pencil"></span></a>
+                    <a href="@Url.Action("relatorio-paciente", "Medico", new { id = Model.IdPaciente })" class="btn btn-warning" title="Gerar Relatório"><span class="glyphicon glyphicon-print"></span></a>
+                </td>
+            </tr>
+
+
+        </table>
+
+    }
+}
+
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

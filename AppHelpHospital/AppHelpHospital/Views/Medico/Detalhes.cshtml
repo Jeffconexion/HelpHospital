@@ -1,0 +1,233 @@
+﻿@model HelpHospital.Domain.PacienteDomain
+
+@{
+    ViewBag.Title = "Detalhes";
+}
+
+<h2 class="text-center">Detalhes do Paciente</h2>
+<br />
+<hr />
+
+<div>
+
+    <dl class="dl-horizontal">
+
+        <div class="row">
+
+            <div class="col-md-4">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Rg)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Rg)
+                </dd>
+            </div>
+
+            <div class="col-md-4">
+                <dt>
+                    @Html.DisplayNameFor(model => model.NomePaciente)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.NomePaciente)
+                </dd>
+            </div>
+
+            <div class="col-md-4">
+                <dt>
+                    @Html.DisplayNameFor(model => model.SobreNomePaciente)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.SobreNomePaciente)
+                </dd>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <dt>
+                    @Html.DisplayNameFor(model => model.DataNascimento)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.DataNascimento)
+                </dd>
+            </div>
+
+            <div class="col-md-4">
+                <dt>
+                    @Html.DisplayNameFor(model => model.DataNascimento)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.DataNascimento)
+                </dd>
+            </div>
+            <div class="col-md-4">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Estado)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Estado)
+                </dd>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Cidade)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Cidade)
+                </dd>
+            </div>
+
+            <div class="col-md-4">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Rua)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Rua)
+                </dd>
+            </div>
+            <div class="col-md-4">
+                <dt>
+                    @Html.DisplayNameFor(model => model.NumeroDaCasa)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.NumeroDaCasa)
+                </dd>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Telefone)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Telefone)
+                </dd>
+            </div>
+
+            <div class="col-md-4">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Alergia)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Alergia)
+                </dd>
+
+            </div>
+            <div class="col-md-4">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Queixa)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Queixa)
+                </dd>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4">
+                <dt>
+                    @Html.DisplayNameFor(model => model.DoencaAtual)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.DoencaAtual)
+                </dd>
+            </div>
+
+            <div class="col-md-4">
+                <dt>
+                    @Html.DisplayNameFor(model => model.DataDeCadastro)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.DataDeCadastro)
+                </dd>
+
+            </div>
+            <div class="col-md-4">
+                <dt>
+                    @Html.DisplayNameFor(model => model.DataDeSaida)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.DataDeSaida)
+                </dd>
+            </div>
+
+        </div>
+
+        <br />
+        <br />
+
+        <h2 class="text-center">Informar dados do Responsável</h2>
+        <hr />
+
+        <div class="row">
+            <div class="col-md-4">
+                <dt>
+                    @Html.DisplayNameFor(model => model.NomeCuidador)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.NomeCuidador)
+                </dd>
+            </div>
+
+            <div class="col-md-4">
+                <dt>
+                    @Html.DisplayNameFor(model => model.EmailCuidador)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.EmailCuidador)
+                </dd>
+
+            </div>
+            <div class="col-md-4">
+                <dt>
+                    @Html.DisplayNameFor(model => model.MensagemParaCuidador)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.MensagemParaCuidador)
+                </dd>
+            </div>
+        </div>
+
+
+    </dl>
+</div>
+<br />
+<br />
+
+<div class="row">
+    <div class=" col-md-6 text-center">
+        <a href="@Url.Action("editar-paciente",new { id = Model.IdPaciente })" class="btn btn-success">Editar</a>
+    </div>
+    <div class="col-md-6 text-center">
+        @Html.ActionLink("Voltar", "Prontuario", null, new { @class = "btn btn-danger" })
+    </div>
+</div>
+

@@ -1,0 +1,83 @@
+﻿@model IEnumerable<HelpHospital.Domain.PacienteDomain>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@if (TempData["Mensagem"] != null)
+{
+    <div class="alert alert-success">
+        <button type="button" class="close" data-dismiss="alert">x</button>
+        <h3><strong>@TempData["Mensagem"].ToString()</strong></h3>
+    </div>
+}
+
+
+<h2 class="text-center">Pacientes Cadastrados</h2>
+<br />
+<br />
+
+<table class="table ">
+    <thead class="bg-info">
+        <tr>
+
+            <th>
+                @Html.DisplayNameFor(model => model.NomePaciente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SobreNomePaciente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataNascimento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cidade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Queixa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataDeCadastro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataDeSaida)
+            </th>
+            <th><strong>Ações</strong></th>
+        </tr>
+    </thead>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomePaciente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SobreNomePaciente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataNascimento)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Cidade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Queixa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataDeCadastro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataDeSaida)
+            </td>
+            <td>
+                <a href="@Url.Action("Detalhes", "Paciente", new { id = item.IdPaciente })" class="btn btn-info " title="Detalhes"><span class="glyphicon glyphicon-list"></span></a>
+                <a href="@Url.Action("Editar", "Paciente", new { id = item.IdPaciente })" class="btn btn-success" title="Editar"><span class="glyphicon glyphicon-pencil"></span></a>
+                <a href="@Url.Action("Deletar", "Paciente", new { id = item.IdPaciente })" class="btn btn-danger" title="Excluir"><span class="glyphicon glyphicon-trash"></span></a>
+
+            </td>
+        </tr>
+    }
+
+</table>

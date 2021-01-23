@@ -1,0 +1,17 @@
+E:\04_Treinamento_Rascunho\AppHelpHospital\HelpHospital.Domain\bin\Debug\HelpHospital.Domain.dll
+E:\04_Treinamento_Rascunho\AppHelpHospital\HelpHospital.Domain\bin\Debug\HelpHospital.Domain.pdb
+E:\04_Treinamento_Rascunho\AppHelpHospital\HelpHospital.Domain\obj\Debug\HelpHospital.Domain.csprojAssemblyReference.cache
+E:\04_Treinamento_Rascunho\AppHelpHospital\HelpHospital.Domain\obj\Debug\HelpHospital.Domain.csproj.CoreCompileInputs.cache
+E:\04_Treinamento_Rascunho\AppHelpHospital\HelpHospital.Domain\obj\Debug\HelpHospital.Domain.dll
+E:\04_Treinamento_Rascunho\AppHelpHospital\HelpHospital.Domain\obj\Debug\HelpHospital.Domain.pdb
+E:\Treinamentos\AppHelpHospital\HelpHospital.Domain\bin\Debug\HelpHospital.Domain.dll
+E:\Treinamentos\AppHelpHospital\HelpHospital.Domain\bin\Debug\HelpHospital.Domain.pdb
+E:\Treinamentos\AppHelpHospital\HelpHospital.Domain\obj\Debug\HelpHospital.Domain.csproj.CoreCompileInputs.cache
+E:\Treinamentos\AppHelpHospital\HelpHospital.Domain\obj\Debug\HelpHospital.Domain.dll
+E:\Treinamentos\AppHelpHospital\HelpHospital.Domain\obj\Debug\HelpHospital.Domain.pdb
+E:\04_Treinamento_Rascunho\01_HelpHospital\AppHelpHospital\HelpHospital.Domain\bin\Debug\HelpHospital.Domain.dll
+E:\04_Treinamento_Rascunho\01_HelpHospital\AppHelpHospital\HelpHospital.Domain\bin\Debug\HelpHospital.Domain.pdb
+E:\04_Treinamento_Rascunho\01_HelpHospital\AppHelpHospital\HelpHospital.Domain\obj\Debug\HelpHospital.Domain.csprojAssemblyReference.cache
+E:\04_Treinamento_Rascunho\01_HelpHospital\AppHelpHospital\HelpHospital.Domain\obj\Debug\HelpHospital.Domain.csproj.CoreCompileInputs.cache
+E:\04_Treinamento_Rascunho\01_HelpHospital\AppHelpHospital\HelpHospital.Domain\obj\Debug\HelpHospital.Domain.dll
+E:\04_Treinamento_Rascunho\01_HelpHospital\AppHelpHospital\HelpHospital.Domain\obj\Debug\HelpHospital.Domain.pdb

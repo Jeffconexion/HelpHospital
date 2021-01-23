@@ -1,0 +1,67 @@
+﻿@model HelpHospital.Domain.PacienteDomain
+
+@{
+    ViewBag.Title = "Deletar";
+}
+
+<h2 class="text-center">Deletar Paciente</h2>
+<br />
+<hr />
+
+<div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <dt>
+                @Html.DisplayNameFor(model => model.Rg)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Rg)
+            </dd>
+        </div>
+
+        <div class="col-md-4">
+            <dt>
+                @Html.DisplayNameFor(model => model.NomePaciente)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.NomePaciente)
+            </dd>
+        </div>
+
+        <div class="col-md-4">
+            <dt>
+                @Html.DisplayNameFor(model => model.SobreNomePaciente)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.SobreNomePaciente)
+            </dd>
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />    <br />
+
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="row">
+            <div class="form-group">
+                <div class=" col-md-6 text-center">
+                    <input type="submit" value="Excluir" class="btn btn-success" />
+
+                </div>
+                <div class="col-md-6 text-center">
+                    @Html.ActionLink("Cancelar", "Index", null, new { @class = "btn - btn-danger" })
+
+                </div>
+            </div>
+        </div>
+    }
+</div>
