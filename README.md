@@ -27,7 +27,7 @@ Mediante o conhecimento adquirido, foi desenvolvido o HelpHospital empregando ca
 * Acolhimento - é utilizado pelo atendente, para cadastrar e manter o paciente.
 * Paciente - é utilizado pelo médico, para acessar o prontuário e imprimir relatórios.
 
-
+<br>
 
 <p align="center">
   <img src="https://github.com/Jeffconexion/HelpHospital/blob/main/helpHospital.gif" />
