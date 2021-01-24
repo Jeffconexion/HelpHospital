@@ -30,5 +30,5 @@ Mediante o conhecimento adquirido, foi desenvolvido o HelpHospital empregando ca
 
 
 <p align="center">
-  <img src="https://github.com/Jeffconexion/SysAluno/blob/main/sysProject.gif" />
+  <img src="https://github.com/Jeffconexion/HelpHospital/blob/main/helpHospital.gif" />
 </p>
